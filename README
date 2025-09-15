@@ -1,0 +1,20 @@
+How to compile:
+
+Linux: 
+
+Ensure you have nasm installed on your machine to compile the program: (Debian/Ubuntu)
+
+- sudo apt update
+- sudo apt install nasm
+
+Compile the program:
+
+nasm -f elf64 main.asm -o main.o
+gcc -no-pie main.o -o main   # -no-pie avoids PIE errors
+
+Run the program: (ensure you are in the correct directory)
+./main
+
+Expected output:
+
+You should see the classic FizzBuzz output from 1 to 100.
