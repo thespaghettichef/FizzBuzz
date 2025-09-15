@@ -14,7 +14,7 @@ section .text
 main:
     push rbp
     mov rbp, rsp
-    sub rsp, 16              ; reserve space if needed
+    sub rsp, 16              ; reserve space (if needed but good practice so why not)
 
     mov dword [rbp-4], 1     ; int i = 1
 
@@ -75,3 +75,4 @@ main:
     mov eax, 0
     leave
     ret
+
